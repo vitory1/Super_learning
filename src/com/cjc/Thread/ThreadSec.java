@@ -11,16 +11,18 @@ class Sale implements Runnable{
     public void run() {
         if (flag){
             while (count>0){
-                synchronized (ob){
-                    try {
-                        Thread.sleep(40);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                synchronized (this) {
+                    if (count > 0) {
+                        try {
+                            Thread.sleep(40);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println(Thread.currentThread().getName() + ",出售第=" + (100 - count + 1) + "张票");
+                        count--;
                     }
-                    System.out.println(Thread.currentThread().getName() + ",出售第=" + (100 - count + 1) + "张票");
-                    count--;
                 }
-                }
+            }
             }else {
             while (count>0){
                 show();
