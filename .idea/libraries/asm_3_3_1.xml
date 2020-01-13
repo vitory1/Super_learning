@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="asm-3.3.1">
+    <CLASSES>
+      <root url="jar:///Volumes/CJC/Java笔记/0006-每特教育(蚂蚁课堂)-自定义注解与设计模式/0006-每特教育(蚂蚁课堂)-自定义注解与设计模式/代理需要jar包/asm-3.3.1.jar!/" />
+      <root url="jar:///Volumes/CJC/Java笔记/0006-每特教育(蚂蚁课堂)-自定义注解与设计模式/0006-每特教育(蚂蚁课堂)-自定义注解与设计模式/代理需要jar包/cglib-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
